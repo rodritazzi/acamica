@@ -1,4 +1,5 @@
-var codigo, pi, password;
+var codigo, password;
+const pi = (Math.PI);
 
 //función que suma dos números
 function suma(nro1, nro2) {
@@ -20,7 +21,7 @@ function promedio(nro1, nro2, nro3, nro4, nro5) {
 //funcion que saca el perímetro de un cúrculo
 function perimetro(nro1) {
     nro1 = parseInt(prompt("Ingrese el diámetro"));
-    return nro1 * (Math.PI);
+    return nro1 * pi;
 }
 
 //función que divide dos números
@@ -36,36 +37,43 @@ function division(nro1, nro2) {
     }
 
 }
+//funcion que saca el diametro de un círculo
+function diametro(nro1) {
+    const
+        nro1 = parseInt(prompt("Ingrese el radio"));
+    return nro1 * pi;
 
-password = prompt("Ingrese la contraseña")
-if (password == "bicicleta") {
 
-    codigo = parseInt(prompt("¿Qué aplicación quiere realizar?\n\nSuma = 1\nPromedio = 2\nPerímetro de un círculo = 3\n division de dos numeros=4\n"))
+    password = prompt("Ingrese la contraseña")
+    if (password == "bicicleta") {
 
-    if (codigo == 1) {
+        codigo = parseInt(prompt("¿Qué aplicación quiere realizar?\n\nSuma = 1\nPromedio = 2\nPerímetro de un círculo = 3\n division de dos numeros=4\n"))
 
-        alert("La suma es " + suma());
+        if (codigo == 1) {
 
-    } else {
-        if (codigo == 2) {
-
-            alert("El promedio es " + promedio());
+            alert("La suma es " + suma());
 
         } else {
-            if (codigo == 3) {
+            if (codigo == 2) {
 
-                alert("El promedio es " + perimetro());
+                alert("El promedio es " + promedio());
 
             } else {
-                if (codigo == 4) {
-                    division()
+                if (codigo == 3) {
 
+                    alert("El promedio es " + perimetro());
+
+                } else {
+                    if (codigo == 4) {
+                        division()
+
+                    }
                 }
+
             }
-
         }
-    }
-} else {
+    } else {
 
-    alert("Contraseña incorrecta");
+        alert("Contraseña incorrecta");
+    }
 }
