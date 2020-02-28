@@ -15,6 +15,7 @@ function promedio(nro1, nro2, nro3, nro4, nro5) {
     nro4 = parseInt(prompt("Ingrese el cuarto número"));
     nro5 = parseInt(prompt("Ingrese el quinto número"));
     return (nro1 + nro2 + nro3 + nro4 + nro5) / 5
+}
 
 //funcion que saca el perímetro de un cúrculo
 function perimetro(nro1) {
@@ -26,12 +27,14 @@ function perimetro(nro1) {
 function division(nro1, nro2) {
     nro1 = parseInt(prompt("Ingrese el primer número"));
     nro2 = parseInt(prompt("Ingrese el segundo número"));
+
     if ((nro1 / nro2) == "Infinity") {
         alert("No se puede dividir por cero");
     } else {
+        alert("la division es " + (nro1 / nro2));
 
-        return (nro1 / nro2);
     }
+
 }
 
 password = prompt("Ingrese la contraseña")
@@ -55,11 +58,7 @@ if (password == "bicicleta") {
 
             } else {
                 if (codigo == 4) {
-                    alert("la division es " + division());
-                    if (division == Infinity) {
-                        alert("No se puede dividir por cero");
-                    }
-                } else {
+                    division()
 
                 }
             }
